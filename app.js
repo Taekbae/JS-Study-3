@@ -14,7 +14,7 @@ const CANVAS_SIZE = 500;
 canvas.width = CANVAS_SIZE;
 canvas.height = CANVAS_SIZE;
 
-// default Setting
+// default
 ctx.font = "50px Anton";
 ctx.strokeStyle = "black";
 ctx.fillStyle = "white";
@@ -35,14 +35,14 @@ function handleColorClick(event) {
   resetCanvas();
   var color = event.target.style.backgroundColor;
   ctx.strokeStyle = color;
-  DrawText(event);
+  DrawText();
 }
 
 function handleRangeChange(event) {
   resetCanvas();
   const size = event.target.value;
   ctx.font = size + "px Anton";
-  DrawText(event);
+  DrawText();
 }
 
 function handleImage(event) {
@@ -76,7 +76,7 @@ function handleSaveClick() {
   const image = canvas.toDataURL("image/png");
   const link = document.createElement("a");
   link.href = image;
-  link.download = "Meme Generator[❤️]";
+  link.download = "Meme Generator";
   link.click();
 }
 

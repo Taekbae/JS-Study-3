@@ -1,0 +1,98 @@
+@import "reset.css";
+
+body {
+  background-color: #f6f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.canvas {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.controls .controls__inputtext {
+  margin-bottom: 30px;
+}
+
+.controls .controls__inputtext input {
+  margin: 0 10px;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #999;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: 0.25em;
+}
+
+.controls .controls__inputtext input:focus {
+  outline: none;
+}
+
+.controls__btns button,
+label {
+  margin: 0 10px;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #999;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: 0.25em;
+}
+
+.controls__btns input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.controls__btns button:active,
+.controls__btns label:active {
+  transform: scale(0.98);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls .controls__range {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <title>Meme Generator</title>
+  </head>
+  <body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+      <div class="controls__btns">
+        <div>
+          <label for="jsLoad">Browse</label>
+          <input type="file" id="jsLoad" name="jsLoad" />
+        </div>
+        <button id="jsGenerate">Generate</button>
+        <button id="jsSave">Save</button>
+      </div>
+      <div class="controls__inputtext">
+        <input type="text" id="toptext" placeholder="top part of the image" />
+        <input
+          type="text"
+          id="bottomtext"
+          placeholder="bottom part of the image"
+        />
+      </div>
+      <div class="controls__range">
+        <input
+          type="range"
+          id="jsRange"
+          min="25"
+          max="75"
+          value="50"
+          step="0.1"
+        />
+      </div>
+      <div class="controls__colors" id="jsColors">
+        <div
+          class="controls__color jsColor"
+          style="background-color: #2c2c2c"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: white"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #FF3B30"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #FF9500"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #FFCC00"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #4CD963"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #5AC8FA"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #0579FF"
+        ></div>
+        <div
+          class="controls__color jsColor"
+          style="background-color: #5856D6"
+        ></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
